@@ -1,0 +1,215 @@
+/*повторное использование*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap'); 
+html{
+	--main-text-color: #61C35A;
+	--subhead-color:#40843C;
+	--text-color:#96C2AF;
+	--main-bg-color: #1E2C26;
+	--non-clickable-color:#627661;
+	--clickable-color:#9CDF9A;
+	--menu-color:#2C4135;
+	--dark-bg-color:#15211C;
+	--light-bg-color:#2E3D36;
+	--subitem-color:#517465;
+	--cont-width:68.8em;
+	--cont-profile-width:61.1em;
+	--box-shadow-bright:0.5em 0.5em 0.5em rgba(65, 137, 95, 0.5);
+}
+
+.body1{
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.13em;
+	background:var(--main-bg-color) repeat url(../img/index/bg_cell.png);
+	color:var(--main-text-color);
+}
+
+/* заставка "поверните экран" только для маленьких экранов */
+.screensaver{
+	display:none;
+}
+.screensaver__text{
+	font-size: 1.4em;
+}
+
+/*-----------------------------------HEADER----------------------------------------*/
+.container{
+	width:100%;
+	min-height:3.4em;
+	background-color: var(--menu-color);
+}
+
+.header{
+	position:absolute;
+	left:0;
+	right:0;
+	max-width:var(--cont-width);
+	padding: 0 20px;
+	margin:0 auto;
+}
+
+.header, .container{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* меню */
+.header__nav{
+	height:100%;
+}
+
+.header__nav__ul{
+	display:flex;
+	flex-direction:row;
+	justify-content: stretch;
+	align-items: center;
+	list-style-type:none;
+	text-transform: uppercase;
+	padding:0;
+	margin: 0.67em 0;
+}
+
+.a-logo{	
+	display:block;
+	background:url(../img/index/logo.png) no-repeat; 
+	height:2.34em;
+	width:2.34em;
+	background-size: 100%;
+}
+
+.header__nav__link{
+	margin-right:2em;
+	text-decoration:none;
+	color:var(--main-text-color);
+	letter-spacing: 0.13em;
+	transition: color .3s linear;
+}
+.header__nav__link:hover{
+	color:var(--clickable-color);
+}
+
+.header__sign{
+	color: var(--text-color);
+	letter-spacing: 0.13em;
+	font-weight: 700;
+	border: 1px solid var(--text-color);
+	text-shadow: 0px 4px 2px var(--main-bg-color);
+	background-color: transparent;
+	padding: 0.28em 0.5em;
+}
+
+.header__sign:hover{
+	box-shadow: 0 0 0.5em var(--clickable-color);
+	text-shadow: 0 0 1em var(--main-bg-color);
+}
+
+.img-enter{
+	background:url('../img/index/icons_light.png') 60% 67%;
+	height:1.33em;
+	width:1.33em;
+	background-size: 600% auto;
+}
+
+
+/*ДЛЯ большинства кнопок - используется повторно*/
+.button-img{
+	font-size: 1em;
+	text-transform: uppercase;
+	display:flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+	gap: 0.5em;
+	letter-spacing: 0.13em;
+}
+
+.content{
+	max-width:var(--cont-width);
+	margin:0 auto;
+	padding: 0 20px;
+}
+
+
+/*------------------------------Уникальное содержимое*/
+
+
+.personal-page{
+	display:flex;
+	
+}
+
+.character{
+	background-color: var(--menu-color);
+	flex-grow:1;
+}
+
+
+
+/*медиа-запросы*/
+
+@media screen and (max-width: 520px) {
+	.text-enter{
+		display:none;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.body1{
+		font-size: 1vw;
+	}
+	.description{
+		font-size: 0.67em;
+	}
+	.background-arrows{
+		background-size: 50vw auto;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.team__block{
+		flex-basis:12em;
+	}
+	.circle{
+		right:-30%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.manual{ flex-wrap: wrap; } /* для переноса */
+	.body1{
+		font-size: 16px;
+	}
+	
+	.bold_heading{
+		font-size:2.5em;
+	}
+
+	.heading__heading3{
+		line-height:1;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.body1{
+		font-size: 14px;
+	}
+
+	.title2{
+		font-size: 2.8em;
+	}
+
+}
+@media screen and (max-width: 576px) {
+	.body1{
+		font-size: 13px;
+	}
+	.title, .bold_heading{
+		font-size: 3em;
+	}
+
+}
+
+
