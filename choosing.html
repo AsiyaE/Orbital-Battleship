@@ -9,12 +9,16 @@
 </head>
 <body class="body2">
 	<div class="interface">
-		<button class="button-img icon-message"><img src="img/choosing/message.svg" alt=""></button>
+		<div class="interface__function">
+			<button class="button-img icon-interface icon-message"><img src="img/choosing/message.svg" alt=""></button>
+			<button class="button-img icon-info icon-interface interface__function__info"><img src="img/choosing/info.svg" alt=""></button>
+			<button class="icon-interface icon-element interface__function__element"><span class="text-bold-T-Medium">Ds</span></button>
+		</div>
 		<div class="players">
 			<div class="player">
 				<img class="player__avatar" src="/img/choosing/1.png">
-				<div class="player__info">
-					<span class="text-bold-T-Small">Абрамов Константин</span>
+				<div class="player__info ">
+					<span class="text-bold-T-Small truncate-text">Абрамов Константин Викторович</span>
 					<div class="player__info__status">
 						<div class="circle online"></div>
 						<span class="text-online text-bold-T-Tiny">online</span>
@@ -26,7 +30,7 @@
 			<div class="player">
 				<img class="player__avatar" src="/img/choosing/2.png">
 				<div class="player__info">
-					<span class="text-bold-T-Small">Абрамов Константин</span>
+					<span class="text-bold-T-Small truncate-text">Абрамов Константин</span>
 					<div class="player__info__status">
 						<div class="circle offline"></div>
 						<span class="text-offline text-bold-T-Tiny">offline</span>
@@ -51,7 +55,7 @@
 		</div>
 		<div class="cell">
 		</div>
-		<div class="cell">
+		<!-- <div class="cell">
 		</div>
 		<div class="cell">
 		</div>
@@ -64,7 +68,7 @@
 		<div class="cell">
 		</div>
 		<div class="cell">
-		</div>
+		</div> -->
 		<div class="cell">
 		</div>      
 		<div class="cell">
@@ -109,7 +113,7 @@
 			<div class="selected-element__number text-bold-T-Small">
 				<span class="text-reg-T-m-Small">Боеприпасы</span>
 				<div class="ammunition">
-					<img src="img/choosing/ammunition.svg" alt="">
+					<img class="ammunition__img " src="img/choosing/ammunition.svg" alt="">
 					<span class="text-header-bold-h4">110</span>
 				</div>
 			</div>
@@ -165,8 +169,6 @@
 		</div>
 		 <div class="cell">
 		</div>
-		<!--<div class="cell">
-		</div>
 		<div class="cell">
 		</div>
 		<div class="cell">
@@ -178,7 +180,9 @@
 		<div class="cell">
 		</div>
 		<div class="cell">
-		</div> -->
+		</div>
+		<div class="cell">
+		</div>
 		<div class="cell">
 		</div>
 		
@@ -727,7 +731,11 @@
 		<div class="cell">
 		</div>
 	</div>
-	<button class="button-text button-primary button-select-element">выбрать элемент</button>
-	<button class="button-icon button-exit"><img class="player__avatar" src="/img/choosing/exit.svg"><span>сдаться и выйти</span></button>
+	<div class="interface-bottom">
+		<button class="text-button-B-Medium button-primary button-select-element">выбрать элемент</button>
+	</div>
+	<div class="interface-exit">
+		<button class="button-icon button-exit"><img class="" src="/img/choosing/exit.svg"><span>сдаться и выйти</span></button>
+	</div>
 </body>
 </html>
