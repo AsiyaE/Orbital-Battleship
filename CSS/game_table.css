@@ -231,8 +231,8 @@ button{
 	position:absolute;
 	left:1rem;
 	bottom:1rem;
-	/* justify-self:flex-start; */
 }
+
 .button-select-element-bottom{
 	display: none;
 }
@@ -725,7 +725,7 @@ button{
 	.nav-2{
 		display:flex;
 	}
-	.interface-bottom{
+	.interface-bottom-hidden{
 		display: none;
 	}
 	.button-select-element-bottom{
@@ -764,7 +764,7 @@ button{
 	.nav-2{
 		display:none;
 	}
-	.interface-bottom{
+	.interface-bottom-hidden{
 		display: flex;
 	}
 	.button-select-element-bottom{

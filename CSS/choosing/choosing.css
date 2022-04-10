@@ -187,17 +187,20 @@ button{
 
 }
 .button-exit{
-	position:absolute;
-	left:1rem;
-	bottom:1rem;
 	background-color: var(--secondary-800-background) ;
 	color: var(--primary-200-clickable);
 	outline:  solid var(--primary-200-clickable) 1px;
 	font-size:1rem;
 	padding: 0.2em 0.4em;
 	text-transform: uppercase;
-	align-self: flex-start;
 }
+
+.button-exit-position{
+	position:absolute;
+	left:1rem;
+	bottom:1rem;
+}
+
 .button-exit:hover{
 	color: var(--primary-100);
 	box-shadow: var(--glow-button-L-light);
@@ -255,17 +258,18 @@ button{
 }
 
 .interface__function__info{
-	position:absolute;
-	left: 1rem;
-	top: 5.5rem;
+	position: absolute;
+	top:5.5rem;
+	display: flex;
+	flex-direction: column;
+	gap:0.6rem;
+	align-items: flex-start;
 }
 
 .interface__function__element{
-	position:absolute;
-	left: 1rem;
-	top: 10rem;
 	display:none;
 }
+
 .icon-element{
 	color: var(--secondary-100-text);
 	background-color:  var(--secondary-900-dark-backing) ;
@@ -360,7 +364,7 @@ button{
 	justify-content: center;
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 120%;
+
 }
 
 .group{
@@ -369,7 +373,7 @@ button{
 	align-items: center;
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 120%;	
+
 }
 
 /*отступ между 7 и 8 строкой*/
@@ -400,6 +404,7 @@ button{
 	font-style: normal;
 	font-weight: 700;
 	letter-spacing: 0.01rem;
+	line-height: 120%;
 }
 .text-bold-T-Tiny{
 	font-family: 'Montserrat';
