@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="CSS/game_table.css" rel="stylesheet" type="text/css">
+	<title>Document</title>
+</head>
+<body class="body2">
+	<div class="interface">
+		<div class="interface__function">
+			<button class="button-img icon-interface icon-message">
+				<img src="img/choosing/message.svg" alt="">
+			</button>
+			<div class="interface__function__info">
+				<button class="button-img icon-info icon-interface">
+					<img src="img/choosing/info.svg" alt="">
+				</button>
+				<button class="icon-interface icon-element interface__function__element"><span class="text-bold-T-Medium">Ds</span></button>
+
+				<div class="move-info-wrap move-info-vertical">
+					<img class="icon-small" src="img/game_table/target.svg" alt="">
+					<div class="move-text">
+						<span class="text-button-B-Medium">50%</span>
+						<span class="text-button-B-Tiny"> точность</span>
+					</div>
+				</div>
+				<div class=" move-info-wrap move-info-vertical">
+					<img class="icon-small" src="img/game_table/timer.svg"  alt="">
+					<span class="text-button-B-Medium">00:30</span>
+				</div>
+				<div class="move-info-wrap move-info-vertical">
+					<img class="icon-small" src="img/game_table/move.svg" alt="">
+					<div class="move-text">
+						<span class="text-button-B-Medium ">5</span> 
+						<span class="text-button-B-Tiny">ход</span>
+					</div>
+				</div>
+
+			</div>
+
+			
+		</div>
+		<div class="move-info">
+			<div class="move-number move-info-wrap">
+				<img class="icon-small" src="img/game_table/move.svg" alt="">
+				<div class="move-text">
+					<span class="text-button-B-Medium ">5</span> 
+					<span class="text-button-B-Tiny">ход</span>
+				</div>
+			</div>
+			<div class="move-timer move-info-wrap">
+				<img class="icon-small" src="img/game_table/timer.svg"  alt="">
+				<span class="text-button-B-Medium">00:30</span>
+			</div>
+		</div>
+		<div class="players">
+			<div class="player player-active">
+				<img class="player__avatar player__avatar-active" src="/img/choosing/1.png">
+				<div class="player__info ">
+					<span class="text-bold-T-Small truncate-text">Абрамов Константин Викторович</span>
+					<div class="player__info__status">
+						<div class="circle online"></div>
+						<span class="text-online text-bold-T-Tiny">online</span>
+					</div>
+
+				</div>
+			</div>
+			<img class="sputnik-img" src="img/game_table/Sputnik-Connection-left.svg" >
+			<div class="player">
+				<img class="player__avatar" src="/img/choosing/2.png">
+				<div class="player__info">
+					<span class="text-bold-T-Small truncate-text">Абрамов Константин</span>
+					<div class="player__info__status">
+						<div class="circle offline"></div>
+						<span class="text-offline text-bold-T-Tiny">offline</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="move-target move-info-wrap">
+			<img class="icon-small" src="img/game_table/target.svg" alt="">
+			<div class="move-text">
+				<span class="text-button-B-Medium">50%</span>
+				<span class="text-button-B-Tiny"> точность</span>
+			</div>
+		</div>
+		<button class="icon-scaling button-img"><img src="img/choosing/scale.svg" alt=""></button>
+	</div>
+	<button class="button-icon paging button-paging"><img class="icon-small" src="/img/game_table/arrow-left.svg"></button>
+
+	<!--Таблица химических элементов-->
+	<div class="container-table">
+		<!--Элементы 0й строки-->
+		<div class="cell"> 
+		</div>
+		<div class="cell group top">
+			<span class="text-bold-T-Tiny">1</span>
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+
+		<div class="cell">
+		</div>      
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell group top">
+			<span class="text-bold-T-Tiny">18</span>
+		</div>
+
+		<!--Элементы 1й строки-->
+		<div class="cell period">
+			<span class="text-bold-T-Tiny">1</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">1</span>
+			<span class="element__name text-bold-T-Big">H</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">2</span>
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell ">
+		</div>
+		<div class="cell selected-element">
+			<div class="cell element-preview">
+				<span class="element-preview__name text-long-Lt-Small">darmstadtium</span>
+				<span class="element-preview__symbol text-bold-T-XL">Ds</span>
+				<span class="element-preview__number text-reg-T-m-Normal">110</span>
+			</div>
+			<div class="selected-element__name">
+				<span class="text-reg-T-m-Small">Код соперника</span>
+				<span class="text-header-bold-h4">дармштадтий</span>
+			</div>
+
+		</div>
+		<div class="cell">
+		</div>
+		
+		<div class="cell group">
+			<span class="text-bold-T-Tiny" >13</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">14</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">15</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">16</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">17</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">2</span>
+			<span class="element__name text-bold-T-Big">He</span>
+		</div>
+
+		<!--Элементы 2й строки-->
+		<div class="cell period">
+			<span class="text-bold-T-Tiny">2</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">3</span>
+			<span class="element__name text-bold-T-Big">Li</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">4</span>
+			<span class="element__name text-bold-T-Big">Be</span>
+		</div>
+		<div class="cell">
+		</div>
+		 <div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">5</span>
+			<span class="element__name text-bold-T-Big">B</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">6</span>
+			<span class="element__name text-bold-T-Big">C</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">7</span>
+			<span class="element__name text-bold-T-Big">N</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">8</span>
+			<span class="element__name text-bold-T-Big">O</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">9</span>
+			<span class="element__name text-bold-T-Big">F</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">10</span>
+			<span class="element__name text-bold-T-Big">Ne</span>
+			</div>
+
+		<!--Элементы 3й строки-->
+		<div class="cell period">
+			<span class="text-bold-T-Tiny">3</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">11</span>
+			<span class="element__name text-bold-T-Big">Na</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">12</span>
+			<span class="element__name text-bold-T-Big">Mg</span>
+			</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">3</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">4</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">5</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">6</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">7</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">8</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">9</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">10</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">11</span>
+		</div>
+		<div class="cell group">
+			<span class="text-bold-T-Tiny">12</span>
+		</div>
+		
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">13</span>
+			<span class="element__name text-bold-T-Big">Al</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">14</span>
+			<span class="element__name text-bold-T-Big">Si</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">15</span>
+			<span class="element__name text-bold-T-Big">P</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">16</span>
+			<span class="element__name text-bold-T-Big">S</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">17</span>
+			<span class="element__name text-bold-T-Big">Cl</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">18</span>
+			<span class="element__name text-bold-T-Big">Ar</span>
+			</div>
+
+		<!--Элементы 4й строки-->
+		<div class="cell period">
+			<span class="text-bold-T-Tiny">4</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">19</span>
+			<span class="element__name text-bold-T-Big">K</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">20</span>
+			<span class="element__name text-bold-T-Big">Ca</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">21</span>
+			<span class="element__name text-bold-T-Big">Sc</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">22</span>
+			<span class="element__name text-bold-T-Big">Ti</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">23</span>
+			<span class="element__name text-bold-T-Big">V</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">24</span>
+			<span class="element__name text-bold-T-Big">Cr</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">25</span>
+			<span class="element__name text-bold-T-Big">Mn</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">26</span>
+			<span class="element__name text-bold-T-Big">Fe</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">27</span>
+			<span class="element__name text-bold-T-Big">Co</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">28</span>
+			<span class="element__name text-bold-T-Big">Ni</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">29</span>
+			<span class="element__name text-bold-T-Big">Cu</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">30</span>
+			<span class="element__name text-bold-T-Big">Zn</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">31</span>
+			<span class="element__name text-bold-T-Big">Ga</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">32</span>
+			<span class="element__name text-bold-T-Big">Ge</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">33</span>
+			<span class="element__name text-bold-T-Big">As</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">34</span>
+			<span class="element__name text-bold-T-Big">Se</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">35</span>
+			<span class="element__name text-bold-T-Big">Br</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">36</span>
+			<span class="element__name text-bold-T-Big">Kr</span>
+		</div>
+
+		<!--5я строка-->
+		<div class="cell period">
+			<span class="text-bold-T-Tiny" >5</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">37</span>
+			<span class="element__name text-bold-T-Big">Rb</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">38</span>
+			<span class="element__name text-bold-T-Big">Sr</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">39</span>
+			<span class="element__name text-bold-T-Big">Y</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">40</span>
+			<span class="element__name text-bold-T-Big">Zr</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">41</span>
+			<span class="element__name text-bold-T-Big">Nb</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">42</span>
+			<span class="element__name text-bold-T-Big">Mo</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">43</span>
+			<span class="element__name text-bold-T-Big">Tc</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">44</span>
+			<span class="element__name text-bold-T-Big">Ru</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">45</span>
+			<span class="element__name text-bold-T-Big">Rh</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">46</span>
+			<span class="element__name text-bold-T-Big">Pd</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">47</span>
+			<span class="element__name text-bold-T-Big">Ag</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">48</span>
+			<span class="element__name text-bold-T-Big">Cd</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">49</span>
+			<span class="element__name text-bold-T-Big">In</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">50</span>
+			<span class="element__name text-bold-T-Big">Sn</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">51</span>
+			<span class="element__name text-bold-T-Big">Sb</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">52</span>
+			<span class="element__name text-bold-T-Big">Te</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">53</span>
+			<span class="element__name text-bold-T-Big">I</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">54</span>
+			<span class="element__name text-bold-T-Big">Xe</span>
+			</div>
+
+		<!--6я строка-->
+		<div class="cell period ">
+			<span class="text-bold-T-Tiny">6</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">55</span>
+			<span class="element__name text-bold-T-Big">Cs</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">56</span>
+			<span class="element__name text-bold-T-Big">Ba</span>
+				</div>
+		<div class="cell element" disabled>
+			<span class="element__number text-bold-T-Small">57-71</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">72</span>
+			<span class="element__name text-bold-T-Big">Hf</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">73</span>
+			<span class="element__name text-bold-T-Big">Ta</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">74</span>
+			<span class="element__name text-bold-T-Big">W</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">75</span>
+			<span class="element__name text-bold-T-Big">Re</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">76</span>
+			<span class="element__name text-bold-T-Big">Os</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">77</span>
+			<span class="element__name text-bold-T-Big">Ir</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">78</span>
+			<span class="element__name text-bold-T-Big">Pt</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">79</span>
+			<span class="element__name text-bold-T-Big">Au</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">80</span>
+			<span class="element__name text-bold-T-Big">Hg</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">81</span>
+			<span class="element__name text-bold-T-Big">Tl</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">82</span>
+			<span class="element__name text-bold-T-Big">Pb</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">83</span>
+			<span class="element__name text-bold-T-Big">Bi</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">84</span>
+			<span class="element__name text-bold-T-Big">Po</span>
+		</div>
+	
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">85</span>
+			<span class="element__name text-bold-T-Big">At</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">86</span>
+			<span class="element__name text-bold-T-Big">Rn</span>
+				</div>
+
+		<!--7я строка-->
+		<div class="cell period">
+			<span class="text-bold-T-Tiny">7</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">87</span>
+			<span class="element__name text-bold-T-Big">Fr</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">88</span>
+			<span class="element__name text-bold-T-Big">Ra</span>
+				</div>
+		<div class="cell element" disabled>
+			<span class="element__number text-bold-T-Small" >89-103</span>
+			<span class="element__name text-bold-T-Big"></span>
+		</div>
+
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">104</span>
+			<span class="element__name text-bold-T-Big">Rf</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">105</span>
+			<span class="element__name text-bold-T-Big">Db</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">106</span>
+			<span class="element__name text-bold-T-Big">Sg</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">107</span>
+			<span class="element__name text-bold-T-Big">Bh</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">108</span>
+			<span class="element__name text-bold-T-Big">Hs</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">109</span>
+			<span class="element__name text-bold-T-Big">Mt</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">110</span>
+			<span class="element__name text-bold-T-Big">Ds</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">111</span>
+			<span class="element__name text-bold-T-Big">Rg</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">112</span>
+			<span class="element__name text-bold-T-Big">Cn</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">113</span>
+			<span class="element__name text-bold-T-Big">Uut</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">114</span>
+			<span class="element__name text-bold-T-Big">Fl</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">115</span>
+			<span class="element__name text-bold-T-Big">Uup</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">116</span>
+			<span class="element__name text-bold-T-Big">Lv</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">117</span>
+			<span class="element__name text-bold-T-Big">Uus</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">118</span>
+			<span class="element__name text-bold-T-Big">Uuo</span>
+				</div>
+
+		<!--отступ между двумя частями-->
+		<div class="gap" ></div>
+
+		<!--Элементы 8й строки-->
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">57</span>
+			<span class="element__name text-bold-T-Big">La</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">58</span>
+			<span class="element__name text-bold-T-Big">Ce</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">59</span>
+			<span class="element__name text-bold-T-Big">Pr</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">60</span>
+			<span class="element__name text-bold-T-Big">Nd</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">61</span>
+			<span class="element__name text-bold-T-Big">Pm</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">62</span>
+			<span class="element__name text-bold-T-Big">Sm</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">63</span>
+			<span class="element__name text-bold-T-Big">Eu</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">64</span>
+			<span class="element__name text-bold-T-Big">Gd</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">65</span>
+			<span class="element__name text-bold-T-Big">Tb</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">66</span>
+			<span class="element__name text-bold-T-Big">Dy</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">67</span>
+			<span class="element__name text-bold-T-Big">Ho</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">68</span>
+			<span class="element__name text-bold-T-Big">Er</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">69</span>
+			<span class="element__name text-bold-T-Big">Tm</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">70</span>
+			<span class="element__name text-bold-T-Big">Yb</span>
+			</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">71</span>
+			<span class="element__name text-bold-T-Big">Lu</span>
+				</div>
+		<div class="cell">
+		</div>
+
+		<!--Элементы 9й строки-->
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell">
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">89</span>
+			<span class="element__name text-bold-T-Big">Ac</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">90</span>
+			<span class="element__name text-bold-T-Big">Th</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">91</span>
+			<span class="element__name text-bold-T-Big">Pa</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">92</span>
+			<span class="element__name text-bold-T-Big">U</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">93</span>
+			<span class="element__name text-bold-T-Big">Np</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">94</span>
+			<span class="element__name text-bold-T-Big">Pu</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">95</span>
+			<span class="element__name text-bold-T-Big">Am</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">96</span>
+			<span class="element__name text-bold-T-Big">Cm</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">97</span>
+			<span class="element__name text-bold-T-Big">Bk</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">98</span>
+			<span class="element__name text-bold-T-Big">Cf</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">99</span>
+			<span class="element__name text-bold-T-Big">Es</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">100</span>
+			<span class="element__name text-bold-T-Big">Fm</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">101</span>
+			<span class="element__name text-bold-T-Big">Md</span>
+		</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">102</span>
+			<span class="element__name text-bold-T-Big">No</span>
+				</div>
+		<div class="cell element">
+			<span class="element__number text-bold-T-Small">103</span>
+			<span class="element__name text-bold-T-Big">Lr</span>
+		</div>
+		<div class="cell">
+		</div>
+	</div>
+	<div class="interface-bottom">
+		<button class="text-button-B-Medium button-primary button-select-element button-select-element-main">выбрать элемент</button>
+	</div>
+	<div class="interface-exit">
+		<button class="button-icon button-exit button-exit-position"><img class="icon-tiny" src="/img/choosing/exit.svg"><span>сдаться</span></button>
+		<nav class="nav-3">
+			<button class="button-icon button-paging"><img class="icon-tiny" src="/img/game_table/rhomb.svg"></button>
+			<button class="button-icon button-paging"><img class="icon-tiny" src="/img/game_table/shot.svg"></button>
+			<button class="button-icon button-paging"><img class="icon-tiny" src="/img/game_table/mesh.svg"></button>
+		</nav>
+		<nav class="nav-2">
+			<button class="button-icon button-paging"><img class="icon-small" src="/img/game_table/arrow-left.svg"></button>
+			<button class="button-icon button-paging"><img class="icon-small" src="/img/game_table/arrow-right.svg"></button>
+		</nav>
+		<button class="text-button-B-Medium button-primary button-select-element button-select-element-bottom">выбрать элемент</button>
+		<div class="toggle-switch toggle-switch-bottom">
+			показывать исключения
+		</div>
+	</div>
+</body>
+</html>
