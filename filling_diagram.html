@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="CSS/filling_diagram.css" rel="stylesheet" type="text/css">
+	<title>Document</title>
+</head>
+<body class="body2">
+	<div class="interface">
+		<div>
+			<button class="button-content-center icon-interface icon-message">
+				<img src="img/choosing/message.svg" alt="">
+			</button>
+			<div class="interface__function__info interface__function-big-gap ">
+				<button class="button-content-center icon-info icon-interface">
+					<img src="img/choosing/info.svg" alt="">
+				</button>
+				<button class="icon-interface icon-element interface__function__element"><span class="text-bold-T-Medium">Ds</span></button>
+				<div class="selected-element-wrapper">
+					<div class="cell selected-element-medium">
+						<div class="cell element-preview">
+							<span class="element-preview__name text-long-Lt-Small">darmstadtium</span>
+							<span class="element-preview__symbol text-bold-T-XL">Ds</span>
+							<span class="element-preview__number text-reg-T-m-Normal">110</span>
+						</div>
+						<div class="selected-element__name">
+							<span class="text-reg-T-m-Small">Код маршрута</span>
+							<span class="text-header-bold-h4">дармштадтий</span>
+						</div>
+						<div class="selected-element__number text-bold-T-Small">
+							<span class="text-reg-T-m-Small">Боеприпасы</span>
+							<div class="ammunition">
+								<img class="ammunition__img " src="img/choosing/ammunition.svg" alt="">
+								<span class="text-header-bold-h4">0/110</span>
+							</div>
+						</div>
+						<button class="button-content-center button-secondary-bright"><span class="text-button-B-Medium">изменить</span> </button>				
+					</div>
+					<button class="collapse-vertical">
+						<svg class="collapse-vertical__icon" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<symbol id="collapsing-checkmark">
+								<path d="M8.28516 1.14286L1.42802 8L8.28516 14.8571" stroke="#79CF76" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+							</symbol>
+							<use xlink:href="#collapsing-checkmark"></use>
+						</svg>
+
+					</button>
+				</div>
+				<button class=" button-icon button-secondary-bright-fill button-start-mission">
+					<img class="icon-small " src="img/filling_diagram/play-dark.svg" alt="">
+					<span class="text-button-B-Medium text-wrap start-mission-text">начать миссию</span> 
+				</button>
+				<span class="text-error text-reg-T-m-Normal">Ошибка в заполнении</span>
+
+			</div>
+
+			
+		</div>
+
+		<div class="players">
+			<div class="player ">
+				<img class="player__avatar " src="/img/choosing/1.png">
+				<div class="player__info ">
+					<span class="text-bold-T-Small truncate-text">Абрамов Константин Викторович</span>
+					<div class="player__info__status">
+						<div class="circle online"></div>
+						<span class="text-online text-bold-T-Tiny">online</span>
+					</div>
+
+				</div>
+			</div>
+			<img class="sputnik-img" src="img/choosing/sputnik-con.svg" >
+			<div class="player">
+				<img class="player__avatar" src="/img/choosing/2.png">
+				<div class="player__info">
+					<span class="text-bold-T-Small truncate-text">Абрамов Константин</span>
+					<div class="player__info__status">
+						<div class="circle offline"></div>
+						<span class="text-offline text-bold-T-Tiny">offline</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<button class="icon-scaling button-icon"><img src="img/choosing/scale.svg" alt=""></button>
+	</div>
+	<div class="diagram-container">
+		<img src="/img/filling_diagram/Diagram.svg" alt="" class="diagram">
+	</div>	
+	<div class="interface-exit">
+		<button class="button-icon button-exit button-exit-position"><img class="icon-tiny" src="/img/choosing/exit.svg"><span>сдаться</span></button>
+		<div class="diagram-fill-bar">
+		
+		<div class="cell-selection-panel">
+			<span class="ship-name">4s</span>
+			<div class="selected-block">
+				<div class="diagram-box diagram-box-empty" ></div>
+				<div class="diagram-box diagram-box-zoom ">
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<filter id="shadow">
+									<feDropShadow dx="0.2" dy="0.4" stdDeviation="0.5"></feDropShadow>
+								</filter>
+							</defs>
+							<symbol id="arrow1">
+							<path fill-rule="evenodd" clip-rule="evenodd" 
+								d="M0.957803 15.875L9.9789 0.25L19 15.875L11.5414 15.875L11.5414 37.75L8.4164 37.75L8.4164 15.875L0.957803 15.875Z" 
+								fill="#286124"/>
+							</symbol>
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+					<button class="arrow-spin button-icon">
+					<!-- <svg class="icon-arrow-spin icon-flip" viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" 
+							d="M0.957803 15.875L9.9789 0.25L19 15.875L11.5414 15.875L11.5414 37.75L8.4164 37.75L8.4164 15.875L0.957803 15.875Z" 
+							fill="#286124"/>
+					</svg> -->
+						<svg class="icon-arrow-spin icon-flip " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="diagram-box diagram-box-zoom">
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin arrow-spin-cheked " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin icon-flip " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="diagram-box diagram-box-zoom">
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin  " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin icon-flip " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="diagram-box diagram-box-zoom">
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin icon-flip " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="diagram-box diagram-box-zoom">
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+					<button class="arrow-spin button-icon">
+						<svg class="icon-arrow-spin icon-flip " viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#arrow1"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="diagram-box diagram-box-empty" ></div>
+			</div>
+		</div>
+		<div class="block-selection-panel">
+			<button class="button-icon collapse-horizontal">
+				<svg class="collapse-horizontal__icon flip-90" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="#collapsing-checkmark"></use>
+				</svg>					
+			</button>
+		
+		<div class="diagram-elements-selection">
+			
+			<div class="select-switch">
+				<button class="button-icon select-switch__button "><img class="icon-mini-tiny" src="/img/filling_diagram/ship.svg"><span class="text-button-B-Little">корабли</span></button>
+				<button class="button-icon select-switch__button switched"><img class="icon-mini-tiny" src="/img/filling_diagram/ammunition.svg"><span class="text-button-B-Little">боеприпасы</span></button>
+			</div>
+			<div class="block-selection ">
+				<button class="block-selection__button " disabled></button>
+				<button class="block-selection__button" disabled></button>
+				<button class="block-selection__button " disabled></button>
+				<button class="block-selection__button text-reg-T-r-Medium">4f</button>
+				<button class="block-selection__button text-reg-T-r-Medium">5f</button>
+				<button class="block-selection__button" disabled></button>
+				<button class="block-selection__button" disabled></button>
+
+				<button class="block-selection__button" disabled></button>
+				<button class="block-selection__button" disabled></button>
+				<button class="block-selection__button text-reg-T-r-Medium">3d</button>
+				<button class="block-selection__button text-reg-T-r-Medium">4d</button>
+				<button class="block-selection__button text-reg-T-r-Medium">5d</button>
+				<button class="block-selection__button text-reg-T-r-Medium">6d</button>
+				<button class="block-selection__button text-reg-T-r-Medium" disabled></button>
+
+				<button class="block-selection__button" disabled></button>
+				<button class="block-selection__button text-reg-T-r-Medium selection-completely" >2p</button>
+				<button class="block-selection__button text-reg-T-r-Medium" default>3p</button>
+				<button class="block-selection__button text-reg-T-r-Medium">4p</button>
+				<button class="block-selection__button text-reg-T-r-Medium">5p</button>
+				<button class="block-selection__button text-reg-T-r-Medium">6p</button>
+				<button class="block-selection__button text-reg-T-r-Medium">7p</button>
+
+				<button class="block-selection__button text-reg-T-r-Medium">1s</button>
+				<button class="block-selection__button text-reg-T-r-Medium">2s</button>
+				<button class="block-selection__button text-reg-T-r-Medium selection-partially">3s</button>
+				<button class="block-selection__button text-reg-T-r-Medium">4s</button>
+				<button class="block-selection__button text-reg-T-r-Medium">5s</button>
+				<button class="block-selection__button text-reg-T-r-Medium">6s</button>
+				<button class="block-selection__button text-reg-T-r-Medium">7s</button>
+
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
