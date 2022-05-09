@@ -78,7 +78,7 @@ html{
 	background-color: var(--secondary-900-dark-backing) ;
 }
 
-.button-img{
+.button-content-center{
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -101,7 +101,7 @@ html{
 	height: 4rem;
 }
 .player{
-	background-color: var(--secondary-700-light-backing) ;
+	background-color: var(--disable-800-light-backing) ;
 	padding:0.5rem;
 	width:19.93rem;
 	height: min-content;
@@ -247,22 +247,22 @@ button{
 	justify-content: space-between; 
 	box-sizing: border-box;
 	align-items: center;
+	padding: 1rem;
 }
 
 .interface{
 	width:100%;
 	display:flex;
 	justify-content:space-between;
-	padding: 1rem;
 	box-sizing: border-box;
 }
 
 .interface__function__info{
 	position: absolute;
-	top:5.5rem;
+	top:6rem;
 	display: flex;
 	flex-direction: column;
-	gap:0.6rem;
+	gap:1.5rem;
 	align-items: flex-start;
 }
 
@@ -309,7 +309,7 @@ button{
 	box-sizing: border-box;
 }
 .element-preview{
-	border: 2px solid var(--secondary-100-text);
+	outline: solid var(--secondary-100-text) 2px;
 	grid-area: 1 /1/ 3 /2;
 	display:flex;
 	flex-direction: column;
@@ -612,13 +612,10 @@ button{
 @media screen and  (max-width:600px){
 	.button-exit{
 		position:static;
+		/* align-self: flex-start; */
 	}
 
-	.button-exit{
-		align-self: flex-start;
-	}
 	.interface-exit{
-		padding:1rem;
 		box-sizing: border-box;
 	}
 }

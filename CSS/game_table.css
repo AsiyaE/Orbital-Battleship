@@ -78,7 +78,7 @@ html{
 	background-color: var(--secondary-900-dark-backing) ;
 }
 
-.button-img{
+.button-content-center{
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -295,7 +295,7 @@ button{
 
 .interface__function__info{
 	position: absolute;
-	top:5.5rem;
+	top:6rem;
 	display: flex;
 	flex-direction: column;
 	gap:0.6rem;
@@ -368,6 +368,7 @@ button{
 	font-size: 14px;
 }
 
+
 .selected-element{
 	grid-area: 1 /6/ 3 /13;
 	display:grid;
@@ -378,7 +379,7 @@ button{
 	box-sizing: border-box;
 }
 .element-preview{
-	border: 2px solid var(--secondary-100-text);
+	outline: solid var(--secondary-100-text) 2px;
 	grid-area: 1 /1/ 3 /2;
 	display:flex;
 	flex-direction: column;
