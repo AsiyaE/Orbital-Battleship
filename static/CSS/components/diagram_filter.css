@@ -1,0 +1,82 @@
+.diagram-filter-position{
+	position:absolute;
+	bottom: 4rem;
+	right:1rem;
+	display:flex;
+	gap:1rem;
+}
+
+.diagram-filter{
+	display:flex;
+	background-color: var(--disable-800-light-backing);
+	padding:8px;
+	gap:8px;
+}
+
+.panel{
+	padding:8px 12px 15px;
+	background-color: var(--secondary-900-dark-backing);
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	gap:10px;
+}
+label>span{
+	font-size:x-small;
+}
+.toggle-button{
+	min-height: 47px;
+	min-width: 32px;
+	padding:0 0.2rem;
+}
+.shot-button{
+	padding:1rem;
+	background-color: var(--primary-400-main);
+}
+.shot-button:hover{
+	background-color: var(--primary-200-clickable);
+}
+.shot-button:active{
+	background-color: var(--primary-200);
+}
+.shot-button:disabled{
+	background-color: var(--disable-600-non-clickable);
+}
+
+.square{
+	min-width: 47px;
+	background-color: transparent;
+	outline: solid var(--primary-400-main) 1.4px;
+	color:var(--primary-400-main);
+}
+.rect{
+	background-color: var(--secondary-500);
+	color:white;
+}
+.rect:hover, .square:hover{
+	background-color: var(--primary-200-clickable);
+	color:var(--secondary-800-background);
+}
+.rect:disabled{
+	background-color: var(--disable-800-light-backing);
+	color: var(--disable-300);
+}
+.square:disabled{
+	color: var(--secondary-500);
+	outline: solid var(--disable-600-non-clickable) 1.4px;
+	background-color: transparent;
+}
+.toggle-button__selected{
+	background-color: var(--primary-400-main);
+	color:black;
+}
+
+@media screen  and (max-width:1400px){
+	.toggle-button{
+		min-height: 40px;
+		min-width: 27px;
+	}
+	.square{
+		min-width: 40px;
+	}
+}
