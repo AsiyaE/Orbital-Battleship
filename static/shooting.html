@@ -17,187 +17,213 @@
 	
 	<title>Document</title>
 </head>
-<body class="body2 body-padding">
-	<!--верхняя панель интерфейса-->
-	<div class="interface">
-		<div > 	
-			<button class="button-content-center interface-icon-button icon-message">
-				<svg role="presentation" width="20" height="20" class="icon-small icon__color">
-					<use href="img/sprite.svg#message">
-				</svg>
-			</button>
-			<div class="interface__function__info interface__function-big-gap ">
-				<button class="button-content-center interface-icon-button icon-info">
+<body class="body2 body-padding body-center">
+	<div class="all-interface">
+		<!--верхняя панель интерфейса-->
+		<div class="interface">
+			<div > 	
+				<button class="button-content-center interface-icon-button icon-message">
 					<svg role="presentation" width="20" height="20" class="icon-small icon__color">
-						<use href="img/sprite.svg#info">
+						<use href="img/sprite.svg#message">
 					</svg>
 				</button>
-				<div class="left-mini-info-list">
-					<div class="move-info-wrap move-info-vertical">
-						<img class="icon-small" src="img/game_table/target.svg" alt="">
-						<div class="move-text">
-							<span class="text-button-B-Medium">50%</span>
-							<span class="text-button-B-Tiny"> точность</span>
+				<div class="interface__function__info interface__function-big-gap ">
+					<button class="button-content-center interface-icon-button icon-info">
+						<svg role="presentation" width="20" height="20" class="icon-small icon__color">
+							<use href="img/sprite.svg#info">
+						</svg>
+					</button>
+					<div class="left-mini-info-list">
+						<div class="move-info-wrap move-info-vertical">
+							<img class="icon-small" src="img/game_table/target.svg" alt="">
+							<div class="move-text">
+								<span class="text-button-B-Medium">50%</span>
+								<span class="text-button-B-Tiny"> точность</span>
+							</div>
 						</div>
-					</div>
-					<div class=" move-info-wrap move-info-vertical">
-						<img class="icon-small" src="img/game_table/timer.svg"  alt="">
-						<span class="text-button-B-Medium">00:30</span>
-					</div>
-					<div class="move-info-wrap move-info-vertical">
-						<img class="icon-small" src="img/game_table/move.svg" alt="">
-						<div class="move-text">
-							<span class="text-button-B-Medium ">5</span> 
-							<span class="text-button-B-Tiny">ход</span>
+						<div class=" move-info-wrap move-info-vertical">
+							<img class="icon-small" src="img/game_table/timer.svg"  alt="">
+							<span class="text-button-B-Medium">00:30</span>
+						</div>
+						<div class="move-info-wrap move-info-vertical">
+							<img class="icon-small" src="img/game_table/move.svg" alt="">
+							<div class="move-text">
+								<span class="text-button-B-Medium ">5</span> 
+								<span class="text-button-B-Tiny">ход</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-		</div>
-		<div class="move-info">
-			<div class="move-number move-info-wrap">
-				<img class="icon-small" src="img/game_table/move.svg" alt="">
+			</div>
+			<div class="move-info">
+				<div class="move-number move-info-wrap">
+					<img class="icon-small" src="img/game_table/move.svg" alt="">
+					<div class="move-text">
+						<span class="text-button-B-Medium ">5</span> 
+						<span class="text-button-B-Tiny">ход</span>
+					</div>
+				</div>
+				<div class="move-timer move-info-wrap">
+					<img class="icon-small" src="img/game_table/timer.svg"  alt="">
+					<span class="text-button-B-Medium">00:30</span>
+				</div>
+			</div>
+			<div class="players">
+				<div class="player player-active">
+					<img class="player__avatar player__avatar-active" src="img/choosing/1.png">
+					<div class="player__info ">
+						<span class="text-bold-T-Small truncate-text">Абрамов Константин Викторович</span>
+						<div class="player__info__status">
+							<div class="circle online"></div>
+							<span class="text-online text-bold-T-Tiny">online</span>
+						</div>
+
+					</div>
+				</div>
+				<img class="sputnik-img" src="img/game_table/Sputnik-Connection-left.svg" >
+				<div class="player">
+					<img class="player__avatar" src="img/choosing/2.png">
+					<div class="player__info">
+						<span class="text-bold-T-Small truncate-text">Абрамов Константин</span>
+						<div class="player__info__status">
+							<div class="circle offline"></div>
+							<span class="text-offline text-bold-T-Tiny">offline</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="move-target move-info-wrap">
+				<img class="icon-small" src="img/game_table/target.svg" alt="">
 				<div class="move-text">
-					<span class="text-button-B-Medium ">5</span> 
-					<span class="text-button-B-Tiny">ход</span>
+					<span class="text-button-B-Medium">50%</span>
+					<span class="text-button-B-Tiny"> точность</span>
 				</div>
 			</div>
-			<div class="move-timer move-info-wrap">
-				<img class="icon-small" src="img/game_table/timer.svg"  alt="">
-				<span class="text-button-B-Medium">00:30</span>
-			</div>
+			<button class="icon-scaling button-content-center">
+				<svg role="presentation" width="20" height="20" class="icon-tiny icon-stroke__color">
+					<use href="img/sprite.svg#scaling">
+				</svg>
+			</button>
 		</div>
-		<div class="players">
-			<div class="player player-active">
-				<img class="player__avatar player__avatar-active" src="img/choosing/1.png">
-				<div class="player__info ">
-					<span class="text-bold-T-Small truncate-text">Абрамов Константин Викторович</span>
-					<div class="player__info__status">
-						<div class="circle online"></div>
-						<span class="text-online text-bold-T-Tiny">online</span>
-					</div>
 
-				</div>
-			</div>
-			<img class="sputnik-img" src="img/game_table/Sputnik-Connection-left.svg" >
-			<div class="player">
-				<img class="player__avatar" src="img/choosing/2.png">
-				<div class="player__info">
-					<span class="text-bold-T-Small truncate-text">Абрамов Константин</span>
-					<div class="player__info__status">
-						<div class="circle offline"></div>
-						<span class="text-offline text-bold-T-Tiny">offline</span>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="move-target move-info-wrap">
-			<img class="icon-small" src="img/game_table/target.svg" alt="">
-			<div class="move-text">
-				<span class="text-button-B-Medium">50%</span>
-				<span class="text-button-B-Tiny"> точность</span>
-			</div>
-		</div>
-		<button class="icon-scaling button-content-center">
-			<svg role="presentation" width="20" height="20" class="icon-tiny icon-stroke__color">
-				<use href="img/sprite.svg#scaling">
+		<!--стрелки переходов по страницам-->
+		<button class="button-icon paging-left button-paging">
+			<svg role="presentation" width="20" height="20" class="icon-small icon-stroke__color">
+				<use href="img/sprite.svg#arrow-left">
 			</svg>
 		</button>
+		<button class="button-icon paging-right button-paging">
+			<svg role="presentation" width="20" height="20" class="icon-flip icon-small icon-stroke__color">
+				<use href="img/sprite.svg#arrow-left">
+			</svg>
+		</button>
+
+
+		<!--нижняя панель интерфейса-->
+		<div class="bottom-control-panel">
+			
+
+			<div class="filter"> <!--class=" ... disabled" для изменения стиля выключенной таблицы-->
+				<div class="diagram-filter" >
+					<div class="panel n-panel">
+						<label for="n" class="text-bold-T-Big">n</label>
+						<div class="diagram-input" id="n">
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">1</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">2</span></button>
+							<button class="toggle-button rect toggle-button__selected"><span class="text-bold-T-Normal">3</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">4</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">5</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">6</span></button>
+							<button class="toggle-button rect" disabled><span class="text-bold-T-Normal">7</span></button>
+							
+						</div>
+					</div>
+
+					<div class="panel l-panel">
+						<label for="l" class="text-bold-T-Big">l</label>
+						<div class="diagram-input " id="l">
+							<button class="toggle-button square toggle-button__selected"><span class="text-bold-T-Big">s</span></button>
+							<button class="toggle-button square"><span class="text-bold-T-Big">p</span></button>
+							<button class="toggle-button square "><span class="text-bold-T-Big">d</span></button>
+							<button class="toggle-button square" disabled><span class="text-bold-T-Big">f</span></button>
+						</div>
+					</div>
+					<div class="panel ml-panel">
+						<label for="ml" class="text-bold-T-Big">m<span>L</span></label>
+						<div class="diagram-input" id="ml">
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">+3</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">+2</span></button>
+							<button class="toggle-button rect toggle-button__selected"><span class="text-bold-T-Normal">+1</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">0</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">-1</span></button>
+							<button class="toggle-button rect"><span class="text-bold-T-Normal">-2</span></button>
+							<button class="toggle-button rect" disabled><span class="text-bold-T-Normal">-3</span></button>
+						</div>
+					</div>
+					<div class="panel ms-panel">
+						<label for="ms" class="text-bold-T-Big">m<span>S</span></label>
+						<div class="diagram-input" id="ms">
+							<button class="toggle-button square toggle-button__selected"><span class="text-bold-T-Normal">+1/2</span></button>
+							<button class="toggle-button square"><span class="text-bold-T-Normal">−1/2</span></button>
+						</div>
+					</div>
+					
+					<!-- для мобильного разрешения -->
+					<div class="tabs text-bold-T-Big">
+						<div class="filter-tab">
+							<label for="n" >n</label>
+							<output name="n" class="filter-output">..</output>
+						</div>
+						<div class="filter-tab">
+							<label for="l" >l</label>
+							<output name="l" class="filter-output">..</output>
+						</div>
+						<div class="filter-tab filter-tab--selected">
+							<label for="ml" >m<span>L</span></label>
+							<output name="ml" class="filter-output">..</output>
+						</div>
+						<div class="filter-tab filter-tab--settled ">
+							<label for="ms" >m<span>S</span></label>
+							<output name="ms" class="filter-output">+1/2</output>
+						</div>
+					</div>
+				</div>
+			<button class="shot-button"><span class="text-bold-T-Big">пуск</span></button>
+			</div>
+			<div class="default-menu">
+				<button class="button-icon button-exit button-exit-position">
+					<svg class="icon-tiny icon-primary" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="img/sprite.svg#exit"></use>
+					</svg>
+					<span>сдаться</span>
+				</button>
+
+				<!--навигация по страницам-->
+				<nav class="nav-3">
+					<button class="button-icon button-paging">
+						<svg class="icon-tiny icon-secondary" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="img/sprite.svg#choose"></use>
+						</svg>
+					</button>
+					<button class="button-icon button-paging">
+						<svg class="icon-tiny icon-secondary icon-secondary-selected" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="img/sprite.svg#shoot"></use>
+						</svg>
+					</button>
+					<button class="button-icon button-paging">
+						<svg class="icon-tiny icon-secondary " xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="img/sprite.svg#guess"></use>
+						</svg>
+					</button>
+				</nav>
+			</div>
+		</div>
 	</div>
-
-	<!--стрелки переходов по страницам-->
-	<button class="button-icon paging-left button-paging">
-		<svg role="presentation" width="20" height="20" class="icon-small icon-stroke__color">
-			<use href="img/sprite.svg#arrow-left">
-		</svg>
-	</button>
-	<button class="button-icon paging-right button-paging">
-		<svg role="presentation" width="20" height="20" class="icon-flip icon-small icon-stroke__color">
-			<use href="img/sprite.svg#arrow-left">
-		</svg>
-	</button>
-
 	<!--диаграмма -заменить на функционирующую-->
 	<div class="diagram-container">
 		<img src="img/filling_diagram/Diagram.svg" alt="" class="diagram">
-	</div>
-
-	<!--нижняя панель интерфейса-->
-	<div class="bottom-control-panel">
-		<button class="button-icon button-exit button-exit-position">
-			<svg class="icon-tiny icon-primary" xmlns="http://www.w3.org/2000/svg">
-				<use xlink:href="img/sprite.svg#exit"></use>
-			</svg>
-			<span>сдаться</span>
-		</button>
-		
-		<!--навигация по страницам-->
-		<nav class="nav-3">
-			<button class="button-icon button-paging">
-				<svg class="icon-tiny icon-secondary" xmlns="http://www.w3.org/2000/svg">
-					<use xlink:href="img/sprite.svg#choose"></use>
-				</svg>
-			</button>
-			<button class="button-icon button-paging">
-				<svg class="icon-tiny icon-secondary icon-secondary-selected" xmlns="http://www.w3.org/2000/svg">
-					<use xlink:href="img/sprite.svg#shoot"></use>
-				</svg>
-			</button>
-			<button class="button-icon button-paging">
-				<svg class="icon-tiny icon-secondary " xmlns="http://www.w3.org/2000/svg">
-					<use xlink:href="img/sprite.svg#guess"></use>
-				</svg>
-			</button>
-		</nav>
-		<div class="diagram-filter-position">
-		<div class="diagram-filter">
-			<div class="panel">
-				<label for="n" class="text-bold-T-Big">n</label>
-				<div class="diagram-input" id="n">
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">1</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">2</span></button>
-					<button class="toggle-button rect toggle-button__selected"><span class="text-bold-T-Normal">3</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">4</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">5</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">6</span></button>
-					<button class="toggle-button rect" disabled><span class="text-bold-T-Normal">7</span></button>
-					
-				</div>
-			</div>
-
-			<div class="panel">
-				<label for="l" class="text-bold-T-Big">l</label>
-				<div class="diagram-input " id="l">
-					<button class="toggle-button square toggle-button__selected"><span class="text-bold-T-Big">s</span></button>
-					<button class="toggle-button square"><span class="text-bold-T-Big">p</span></button>
-					<button class="toggle-button square "><span class="text-bold-T-Big">d</span></button>
-					<button class="toggle-button square" disabled><span class="text-bold-T-Big">f</span></button>
-				</div>
-			</div>
-			<div class="panel">
-				<label for="ml" class="text-bold-T-Big">m<span>L</span></label>
-				<div class="diagram-input" id="ml">
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">+3</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">+2</span></button>
-					<button class="toggle-button rect toggle-button__selected"><span class="text-bold-T-Normal">+1</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">0</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">-1</span></button>
-					<button class="toggle-button rect"><span class="text-bold-T-Normal">-2</span></button>
-					<button class="toggle-button rect" disabled><span class="text-bold-T-Normal">-3</span></button>
-				</div>
-			</div>
-			<div class="panel">
-				<label for="ms" class="text-bold-T-Big">m<span>S</span></label>
-				<div class="diagram-input" id="ms">
-					<button class="toggle-button square toggle-button__selected"><span class="text-bold-T-Normal">+1/2</span></button>
-					<button class="toggle-button square"><span class="text-bold-T-Normal">−1/2</span></button>
-				</div>
-			</div>
-		</div>
-		<button class="shot-button"><span class="text-bold-T-Big">пуск</span></button>
-	</div>
 	</div>
 </body>
 </html>

@@ -201,7 +201,11 @@
 		font-size: 6.25px;
 	}
 }
-
+@media screen and  (max-width:1024px){
+	.text-bold-T-Big{
+		font-weight: 600;
+	}
+}
 @media screen and  (max-width:812px){
 
 	.text-button-B-Medium{

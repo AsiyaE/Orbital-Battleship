@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
 :root{
+	--primary-50:#EAF8E9;
 	--primary-100:#C4ECC3;
 	--primary-200-clickable:#9CDF9A;
 	--primary-300:#79CF76;
@@ -52,6 +53,9 @@
 
 	--box-shadow-bright:0.5rem 0.5rem 0.5rem rgba(65, 137, 95, 0.5);
 	--box-shadow-input: 0.3rem 0.3rem 0.3rem rgb(28, 34, 30, 0.7);
+
+	--bacg-with-triangle:linear-gradient(310deg, #2E3D36 52.55%, #2F3F37 90.86%, #EB564D 90.86%, #EB564D 100%);
+
 	font-size: 16px;
 	height:100%;
 }
