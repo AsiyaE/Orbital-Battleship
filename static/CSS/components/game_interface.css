@@ -7,7 +7,7 @@
 	height: 100%;
 	min-height: 200px;
 	min-width:320px;
-	pointer-events: none;
+	/* pointer-events: none; */
 	padding: 1rem;
 	box-sizing: border-box;
 }
@@ -52,6 +52,9 @@
 	color: var(--secondary-100-text);
 	background-color:  var(--secondary-900-dark-backing) ;
 	outline:  solid var(--secondary-100-text) 1px;
+	font-size: 14px;
+	width:40px;
+	height: 40px;
 }
 
 /*скрытие выбранного элемента при больших экранах*/
@@ -219,6 +222,17 @@
 
 	.interface__function__element{
 		display:block;
+	}
+
+	.selected-element{
+		visibility: hidden;
+	}
+	.selected-element-wrapper{
+		display: none; 
+	}
+	.selected-element-medium{
+		background-color: var(--secondary-900-dark-backing);
+		padding: 0.8rem;
 	}
 }
 

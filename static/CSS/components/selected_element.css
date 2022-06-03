@@ -1,0 +1,29 @@
+/*выбранный хим элемент в левом меню при раскрытии*/
+.selected-element-wrapper{
+	display:flex;
+}
+
+.selected-element-medium{
+	display:grid;
+	grid-template-columns: 2.2fr 4fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 1.8rem;
+	grid-row-gap: 1rem;
+	box-sizing: border-box;
+	background-color: var(--secondary-900-dark-backing);
+	padding: 0.8rem;
+}
+
+.collapse-vertical{
+	background-color: var(--secondary-900-dark-backing);
+	height: 3.5em;
+	width: 1.7rem;
+	/* padding: 3px; */
+	box-sizing: border-box;
+}
+
+/*убирается при нажатии на левое меню и раскрытии элемента */
+.sel-el-wr--none{
+	display: none; 
+}
+

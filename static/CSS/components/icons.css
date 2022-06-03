@@ -13,6 +13,7 @@
 	fill:var(--disable-700);
 }
 
+
 /*иконки-линии*/
 .icon-stroke__color{
 	stroke:var(--primary-300);
@@ -28,22 +29,31 @@
 	stroke:var(--disable-700);
 }
 
+
+
 /*второстепенные иконки (например, навигация по станицам)*/
 .icon-secondary{
 	fill:var(--primary-600-subheader);
 }
 .icon-secondary:hover{
-	fill:var(--primary-100);
+	fill:var(--primary-400-main);
 	filter:drop-shadow(0px 0px 10px rgba(219, 243, 237, 0.4));
 }
 .icon-secondary:active{
-	fill:var(--primary-200-clickable);
+	fill:var(--primary-700);
 }
-.icon-secondary:disabled{
+.icon-secondary:disabled, .icon-secondary--selected:disabled{
 	fill:var(--disable-700);
 }
-.icon-secondary-selected{
+.icon-secondary--selected{
 	fill:var(--primary-200-clickable);
+}
+.icon-secondary--selected:hover{
+	fill:var(--primary-100);
+	filter:drop-shadow(0px 0px 10px rgba(219, 243, 237, 0.4));
+}
+.icon-secondary--selected:active{
+	fill:var(--primary-300);
 }
 
 

@@ -6,6 +6,7 @@
 }
 .filter.disabled{
 	filter: contrast(60%) brightness(80%);
+	pointer-events: none;
 }
 
 .diagram-filter{
