@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link href="CSS/choosing.css" rel="stylesheet" type="text/css"> -->
+	<link href="CSS/components/body2.css" rel="stylesheet" type="text/css">
+	<link href="fonts/font-files.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/table.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/constans.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/scroll.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/fonts.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/buttons.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/selected_element.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/decoration.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/icons.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/results.css" rel="stylesheet" type="text/css">
+	<title>Document</title>
+</head>
+<body class="body2 body-padding">
+
+	<div class="results-content">
+		<div class="results-header">
+			<svg class="icon-results-decoration result-winner" xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="img/sprite.svg#ship"></use>
+			</svg>
+			<h1 class="text-style">Миссия выполнена</h1>
+			<svg class="icon-results-decoration result-loser" xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="img/sprite.svg#ship"></use>
+			</svg>
+		</div>
+		<div class="game-results">
+			<div class="player">
+				<div class="player-result-card">
+					<div class="player-info">
+						<img src="img/results/scientist1.png" alt="" class="profile-item-card">
+						<div class="name">
+							<span class="text-bold-T-Medium-custom">Абрамов Константин Анатольевич</span>
+							<span class="text-reg-T-m-Small">Менделеев</span>
+						</div>
+						<div class="pl-element">
+							<span class="element__number text-bold-T-Small">12</span>
+							<span class="element__name text-bold-T-Medium">Mg</span>
+						</div>
+					</div>
+					<div class="game-progress">
+						<div class="level"></div>
+						<div class="coins">
+							<progress class="progress-bar" max="100" value="25">
+							</progress>
+						</div>
+					</div>
+				</div>
+				<div class="statistics text-button-B-Tiny">
+					<div class="mini-info">
+						<span class="caption">выстрелов</span>
+						<div class="value">
+							<img class="icon-small" src="img/game_table/timer.svg">
+							<span class="caption__value">12</span>
+						</div>
+					</div>
+					<div class="mini-info">
+						<span class="caption">попаданий</span>
+						<div class="value">
+							<img class="icon-small" src="img/game_table/timer.svg">
+							<span class="caption__value">12</span>
+						</div>
+					</div>
+					<div class="mini-info">
+						<span class="caption">ср. время хода</span>
+						<div class="value">
+							<img class="icon-small" src="img/game_table/timer.svg">
+							<span class="caption__value">12</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="result">
+				<span class="headers-bold-h1 text-style">1:0</span>
+				<div class="result-time">
+					<span class="text-button-B-Tiny">время</span>
+					<span class="text-bold-T-Normal">00:02:48</span>
+				</div>
+			</div>
+			<div class="player">
+				<div class="player-result-card">
+					<div class="player-info">
+						<img src="img/results/scientist1.png" alt="" class="profile-item-card">
+						<div class="name">
+							<span class="text-bold-T-Medium-custom">Абрамов Константин Анатольевич</span>
+							<span class="text-reg-T-m-Small">Менделеев</span>
+						</div>
+						<div class="pl-element">
+							<span class="element__number text-bold-T-Small">12</span>
+							<span class="element__name text-bold-T-Medium">Mg</span>
+						</div>
+					</div>
+					<div class="game-progress">
+						<div class="level"></div>
+						<div class="coins">
+							<progress class="progress-bar" max="100" value="25">
+							</progress>
+						</div>
+					</div>
+				</div>
+				<div class="statistics text-button-B-Tiny">
+					<div class="mini-info">
+						<span class="caption">выстрелов</span>
+						<div class="value">
+							<img class="icon-small" src="img/game_table/timer.svg">
+							<span class="caption__value">12</span>
+						</div>
+					</div>
+					<div class="mini-info">
+						<span class="caption">попаданий</span>
+						<div class="value">
+							<img class="icon-small" src="img/game_table/timer.svg">
+							<span class="caption__value">12</span>
+						</div>
+					</div>
+					<div class="mini-info">
+						<span class="caption">ср. время хода</span>
+						<div class="value">
+							<img class="icon-small" src="img/game_table/timer.svg">
+							<span class="caption__value">12</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="actions">
+			<button class="button-icon button-primary-bright act-button ">
+				<svg class="icon-medium" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="img/sprite.svg#repeat"></use>
+				</svg>
+				<span class="text-button-B-Medium">реванш</span>
+			</button>
+			<button class="button-icon button-tertiary act-button">
+				<svg class="icon-medium" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="img/sprite.svg#exit"></use>
+				</svg>
+				<span class="text-button-B-Medium">сдаться</span>
+			</button>
+		</div>
+	</div>
+	</body>
+</html>
