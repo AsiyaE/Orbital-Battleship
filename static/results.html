@@ -13,7 +13,8 @@
 	<link href="CSS/components/fonts.css" rel="stylesheet" type="text/css">
 	<link href="CSS/components/buttons.css" rel="stylesheet" type="text/css">
 	<link href="CSS/components/selected_element.css" rel="stylesheet" type="text/css">
-	<link href="CSS/components/decoration.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/selected_element.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/progress-bar.css" rel="stylesheet" type="text/css">
 	<link href="CSS/components/icons.css" rel="stylesheet" type="text/css">
 	<link href="CSS/components/results.css" rel="stylesheet" type="text/css">
 	<title>Document</title>
@@ -25,7 +26,7 @@
 			<svg class="icon-results-decoration result-winner" xmlns="http://www.w3.org/2000/svg">
 				<use xlink:href="img/sprite.svg#ship"></use>
 			</svg>
-			<h1 class="text-style">Миссия выполнена</h1>
+			<h1 class="text-style margin-none">Миссия выполнена</h1>
 			<svg class="icon-results-decoration result-loser" xmlns="http://www.w3.org/2000/svg">
 				<use xlink:href="img/sprite.svg#ship"></use>
 			</svg>
@@ -36,19 +37,20 @@
 					<div class="player-info">
 						<img src="img/results/scientist1.png" alt="" class="profile-item-card">
 						<div class="name">
-							<span class="text-bold-T-Medium-custom">Абрамов Константин Анатольевич</span>
+							<span class="text-bold-T-Medium-custom">Абрамов Константин Иннокентиевич</span>
 							<span class="text-reg-T-m-Small">Менделеев</span>
 						</div>
 						<div class="pl-element">
 							<span class="element__number text-bold-T-Small">12</span>
-							<span class="element__name text-bold-T-Medium">Mg</span>
+							<span class="element__name text-bold-T-Medium-custom">Mg</span>
 						</div>
 					</div>
 					<div class="game-progress">
-						<div class="level"></div>
-						<div class="coins">
-							<progress class="progress-bar" max="100" value="25">
-							</progress>
+						<div class="level">
+							<span>1</span>
+						</div>
+						<div class="progress-bar">
+							<div class="infill"></div>
 						</div>
 					</div>
 				</div>
@@ -88,23 +90,23 @@
 					<div class="player-info">
 						<img src="img/results/scientist1.png" alt="" class="profile-item-card">
 						<div class="name">
-							<span class="text-bold-T-Medium-custom">Абрамов Константин Анатольевич</span>
+							<span class="text-bold-T-Medium-custom">Абрамова Екатерина Карамагомедовна</span>
 							<span class="text-reg-T-m-Small">Менделеев</span>
 						</div>
 						<div class="pl-element">
 							<span class="element__number text-bold-T-Small">12</span>
-							<span class="element__name text-bold-T-Medium">Mg</span>
+							<span class="element__name text-bold-T-Medium-custom">Mg</span>
 						</div>
 					</div>
 					<div class="game-progress">
-						<div class="level"></div>
-						<div class="coins">
-							<progress class="progress-bar" max="100" value="25">
-							</progress>
+						<div class="level">
+							<span class="text">1</span>
 						</div>
+						<progress class="progress-bar" max="100" value="25">
+						</progress>
 					</div>
 				</div>
-				<div class="statistics text-button-B-Tiny">
+				<div class="statistics st-right text-button-B-Tiny">
 					<div class="mini-info">
 						<span class="caption">выстрелов</span>
 						<div class="value">
