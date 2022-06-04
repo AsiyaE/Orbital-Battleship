@@ -1,0 +1,21 @@
+.progress-bar {
+	height:0.5rem;
+	width: 100%;
+	min-width: 30px;
+	overflow: hidden;
+	border-radius: .25em;
+	background-color: var(--disable-500);
+	color: var(--disable-500);
+}
+
+/*первый вариант*/
+.progress-bar::-webkit-progress-value {
+	background: #61C35A;
+}
+/*второй вариант*/
+.infill {
+	height: 100%;
+	width:35%;
+	background-color: var(--primary-400-main);
+	transition: width 1s ease-out 0;
+}
