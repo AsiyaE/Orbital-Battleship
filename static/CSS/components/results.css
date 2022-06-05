@@ -172,6 +172,7 @@
 @media screen and (max-width: 1400px){
 	.icon-results-decoration{
 		display: none;
+
 	}
 	.pl-element{
 		border-width: 1px;
@@ -196,9 +197,6 @@
 	.game-results{
 		flex-direction: column;
 	}
-	.result{
-		gap:0;
-	}
 	.statistics{
 		justify-content: center;
 	}
@@ -221,7 +219,19 @@
 	}
 }
 @media screen and (max-height: 375px) and (max-width:812px){
-	.margin-none{
+	.results-header{
 		margin:0;
 	}
+}
+@media screen and (max-height:812px) and (max-width:375px){
+	.result{
+		flex-basis:0;
+	}
+	.results-header{
+		margin:0;
+	}
+	.body2{
+		min-height: 640px;
+	}
+
 }
