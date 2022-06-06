@@ -3,7 +3,10 @@
 	display:flex;
 	flex-direction: column;
 }
-
+.text-wrap{
+	width: min-content;
+	text-align: left;
+}
 /* --------------------СТИЛИ ТЕКСТА- будут редачиться при уменьшении экрана----------------- */
 
 .headers-bold-h1{
@@ -149,6 +152,15 @@
 	font-size: 24px;
 	line-height: 120%;
 	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.text-button-B-Normal *{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: 0.08em;
 	text-transform: uppercase;
 }
 .text-button-B-Medium{

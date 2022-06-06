@@ -124,40 +124,29 @@ button{
 
 /*----------определенные кнопки---------------------------*/
 
-.button-exit{
-	background-color: var(--secondary-800-background);
-	color: var(--primary-200-clickable);
-	outline:  solid var(--primary-200-clickable) 1px;
-	font-size:1rem;
-	padding: 0.2em 0.4em;
-	text-transform: uppercase;
-	fill:var(--primary-200-clickable);
-}
-.button-exit:hover{
-	color: var(--primary-50);
-	box-shadow: var(--glow-button-L-light);
-	fill:var(--primary-50);
-	outline-color: var(--primary-50);
-}
-.button-exit:active{
-	color: var(--primary-400-main);
-	fill:var(--primary-400-main);
-	outline-color: var(--primary-400-main);
-}
-.button-exit:disabled, .button-exit:disabled:hover{
-	background-color: var(--disable-800-light-backing);
-	color: var(--disable-600-non-clickable);
-	fill:var(--disable-600-non-clickable);
-	outline:none;
-	box-shadow: none;
-	cursor:default;
-}
-
 
 .button-select-element{
 	padding:0.56em;
 	min-width:20.5em;
 }
+
+.button-start-mission{
+	min-width: 5rem;
+	padding: 0.75rem 1.5rem;
+	flex-shrink: 0;
+	fill:currentColor;
+}
+
+@media screen and  (max-width:812px){
+	.button-start-mission{
+		min-width: 45px;
+		height: 45px;
+	}
+	.button-start-mission>span{
+		display: none;
+	}
+}
+
 
 .icon-scaling {
 	min-height: max(2.2rem,30px);
@@ -186,4 +175,10 @@ button{
 
 .shot-button{
 	text-transform: uppercase;
+}
+
+.position-top-right{
+	position: absolute;
+	top:1rem;
+	right:1rem;
 }

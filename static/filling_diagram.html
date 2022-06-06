@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fonts/font-files.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/constans.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/body2.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/fonts.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/diagram_filter.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/buttons.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/button-exit.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/icons.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/diagram.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/selected_element.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/scroll.css" rel="stylesheet" type="text/css">
+	<link href="CSS/components/game_interface.css" rel="stylesheet" type="text/css">
+	<link href="CSS/filling_diagram.css" rel="stylesheet" type="text/css">
+	<title>Document</title>
+</head>
+<body class="body2 body-padding body-center">
+	<div class="all-interface">
+<!--верхняя панель интерфейса-->
+		<div class="interface">
+			<div > 	
+				<button class="button-content-center interface-icon-button icon-message">
+					<svg role="presentation" width="20" height="20" class="icon-small icon__color">
+						<use href="img/sprite.svg#message">
+					</svg>
+				</button>
+				<div class="interface__function__info interface__function-big-gap ">
+					<button class="button-content-center interface-icon-button icon-info">
+						<svg role="presentation" width="20" height="20" class="icon-small icon__color">
+							<use href="img/sprite.svg#info">
+						</svg>
+					</button>
+					<button class="button-content-center interface-icon-button icon-element interface__function__element">
+						<span class="text-bold-T-Normal">Ds</span>
+					</button>
+					<!-- выбранный элемент в раскрытом состоянии -->
+					<div class="selected-element-wrapper  "> <!--  class="... sel-el-wr--none" при скрытии -->
+						<div class="cell selected-element-medium">
+							<div class="cell element-preview">
+								<span class="element-preview__name text-long-Lt-Small">darmstadtium</span>
+								<span class="element-preview__symbol text-bold-T-XL">Ds</span>
+								<span class="element-preview__number text-reg-T-m-Normal">110</span>
+							</div>
+							<div class="selected-element__name">
+								<span class="text-reg-T-m-Small">Код партии</span>
+								<span class="text-header-bold-h4">дармштадтий</span>
+							</div>
+							<div class="selected-element__number text-bold-T-Small">
+								<span class="text-reg-T-m-Small">Грузы</span>
+								<div class="electrons">
+									<svg role="presentation" width="20" height="20" class="electrons__img">
+										<use href="img/sprite.svg#ballons">
+									</svg>
+									<span class="text-header-bold-h4">0/110</span>
+								</div>
+							</div>
+						</div>
+						<button class="collapse collapse-vertical button-icon button-paging">
+							<svg role="presentation" width="20" height="20" class="icon-small icon-stroke__color">
+								<use href="img/sprite.svg#arrow-left">
+							</svg>
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="players">
+				<div class="player player-active">
+					<img class="player__avatar player__avatar-active" src="img/choosing/1.png">
+					<div class="player__info ">
+						<span class="text-bold-T-Small truncate-text">Абрамов Константин Викторович</span>
+						<div class="player__info__status">
+							<div class="circle online"></div>
+							<span class="text-online text-bold-T-Tiny">online</span>
+						</div>
+
+					</div>
+				</div>
+				<img class="sputnik-img" src="img/sputnik/sputnik-con.svg" >
+				<div class="player">
+					<img class="player__avatar" src="img/choosing/2.png">
+					<div class="player__info">
+						<span class="text-bold-T-Small truncate-text">Абрамов Константин</span>
+						<div class="player__info__status">
+							<div class="circle offline"></div>
+							<span class="text-offline text-bold-T-Tiny">offline</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+			<button class="icon-scaling button-content-center">
+				<svg role="presentation" width="20" height="20" class="icon-tiny icon-stroke__color">
+					<use href="img/sprite.svg#scaling">
+				</svg>
+			</button>
+		</div>
+
+		<!--нижняя панель интерфейса-->
+		<div class="bottom-control-panel">
+			<div class="default-menu-left-center-right">
+				<button class="button-icon button-exit ">
+					<svg class="icon-tiny icon-primary" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="img/sprite.svg#exit"></use>
+					</svg>
+					<span>сдаться</span>
+				</button>
+
+				<div class="filling-mode-selection">
+					<span>Режим выделения</span>
+					<div class="select-switch">
+						<button class="button-icon select-switch__button selected">
+							<svg class="icon-mini-tiny " xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="img/sprite.svg#ship"></use>
+							</svg>
+							<span class="text-button-B-Normal">корабли</span></button>
+						<button class="button-icon select-switch__button button-tertiary">
+							<svg class="icon-mini-tiny " xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="img/sprite.svg#ballons-wide"></use>
+							</svg>
+							<span class="text-button-B-Normal">грузы</span>
+						</button>
+					</div>
+				</div>
+
+				<button class=" button-icon button-secondary-bright-fill button-start-mission">
+					<svg class="icon-small " xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="img/sprite.svg#play"></use>
+					</svg>
+					<span class="text-button-B-Medium text-wrap start-mission-text">начать миссию</span> 
+				</button>
+			</div>
+		</div> 
+	</div>
+	
+	<div class="diagram-container">
+		<img class="diagram" src="img/Diagram.svg" alt="" > 
+	</div>
+
+	
+
+
+</body>
+</html>
