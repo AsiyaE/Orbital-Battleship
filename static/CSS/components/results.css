@@ -105,7 +105,6 @@
 	padding:0.3rem;
 	box-sizing: border-box;
 	border: 2px solid var(--secondary-100-text);
-	transition: flex-basis 0.5s, height 0.5s;
 }
 
 .text-style{
@@ -189,6 +188,7 @@
 	.game-results{
 		margin-bottom: 0rem;
 		gap:1rem;
+		transition: margin-bottom 1s,gap 0.5s ease-in;
 	}
 
 }
@@ -202,6 +202,7 @@
 	}
 	.actions{
 		margin-top:2rem;
+		transition: margin 0.5s;
 	}
 	.player{
 		flex-basis:0;
@@ -210,25 +211,30 @@
 @media screen and  (max-width:520px){
 	.results-content{
 		padding: 0 5%;
+		transition: padding 1s ease-in;
 	}
 }
 
 @media screen and (max-height:520px) and (max-width:1024px){ 
 	.game-results{
 		margin-bottom:0;
+		transition: margin-bottom 0.5s ease-in;
 	}
 }
 @media screen and (max-height: 375px) and (max-width:812px){
 	.results-header{
 		margin:0;
+		transition: margin 0.5s ease-in;
 	}
 }
 @media screen and (max-height:812px) and (max-width:375px){
 	.result{
 		flex-basis:0;
+		transition: flex-basis 0.5s ease-in;
 	}
 	.results-header{
 		margin:0;
+		transition: margin 0.5s ease-in;
 	}
 	.body2{
 		min-height: 640px;

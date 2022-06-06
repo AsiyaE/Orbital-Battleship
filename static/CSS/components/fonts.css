@@ -8,7 +8,6 @@
 	text-align: left;
 }
 /* --------------------СТИЛИ ТЕКСТА- будут редачиться при уменьшении экрана----------------- */
-
 .headers-bold-h1{
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -205,6 +204,7 @@
 @media screen and (max-height: 1366px) and (max-width:1570px){
 	:root{
 		font-size:14px;
+
 	}
 	.text-bold-T-Small{
 		font-size:12px;
@@ -232,6 +232,7 @@
 @media screen  and (max-width:1400px){
 	:root{
 		font-size:10px;
+		
 	}
 	.headers-bold-h1{
 		font-size: 50px;
